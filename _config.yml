@@ -1,21 +1,39 @@
 # Site Settings
+
 lang: en
-title: Bulma Clean Theme
-tagline: Bulma Clean Theme
-email: your-email@domain.com
+title: TT
+tagline: TTT
+email: whwu17@hotmail.com
 description: >
   The demo site for Bulma Clean Theme, made for Jekyll and GitHub pages websites
 #baseurl: "/essays-pro"
 url: "https://essays-pro.github.io"
-permalink: pretty
+#permalink: pretty
+permalink: /:year/:month/:title.html
 #favicon: /path/to/favicon.png
 gh_sponsor: chrisrhymes
 #hide_share_buttons: true
 #theme_color: '#eeeeee'
 #fixed_navbar: top
 
-paginate: 5
-paginate_path: "/blog/page:num"
+gems: [jekyll-paginate-v2]
+pagination:
+  enabled: true
+  per_page: 3
+  permalink: '/blog/page/:num/'
+  title: ' - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+#paginate: 5
+#paginate_path:  "/blog/page:num"
+#paginate_multiple:
+#  - paginate: 5
+#    paginate_path: "/blog/page:num"
+#  - paginate: 5
+#    paginate_path: '/tag-show/page:num/'
+#    sub_dir: '/bicycling'
+
 
 # Disqus Comments
 disqus:
@@ -78,3 +96,10 @@ collections:
     layout: product
     image: https://via.placeholder.com/800x600
     show_sidebar: false
+
+gitment:
+  enable: true
+  github_user: essays-pro
+  github_repo: comments-repo #新建一个存储评论的仓库，这里填写仓库名
+  client_id: 6675b7f0e2a26ecc2ea4 #第一步注册的client_id
+  client_secret: 376b945baca7a37ffd5d9c308814f5a7b2370123 #第一步注册的client_secret

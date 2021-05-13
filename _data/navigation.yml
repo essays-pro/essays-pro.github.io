@@ -1,4 +1,14 @@
-- name: Pages
+- name: List
+  link: /blog/
+- name: Category
+  link: /tag-show/
+- name: Products
+  link: /products/
+- name: Showcase
+  link: /showcase/
+
+
+- name: Template
   link: /#
   dropdown:
     - name: Page With Sidebar
@@ -29,9 +39,3 @@
       link: /gallery/
     - name: Recipe Page
       link: /example-recipe/
-- name: Products
-  link: /products/
-- name: Showcase
-  link: /showcase/
-- name: Blog
-  link: /blog/
