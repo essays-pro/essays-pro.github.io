@@ -30,7 +30,7 @@ layout: default
 <script>
     import 'gitalk/dist/gitalk.css'
     import Gitalk from 'gitalk'
-    const gitalk = new Gitalk({
+    const gitalkk = new Gitalk({
         clientID: '{{site.gitment.client_id}}',
         clientSecret: '{{site.gitment.client_secret}}',
         repo: '{{site.gitment.github_repo}}',      // The repository of store comments,
@@ -40,7 +40,7 @@ layout: default
         distractionFreeMode: false  // Facebook-like distraction free mode
     })
 
-    gitalk.render('gitalk-container')
+    gitalkk.render('gitalk-container')
 
     // var gitment = new Gitment({
     //     // id: '<%= page.date %>',
