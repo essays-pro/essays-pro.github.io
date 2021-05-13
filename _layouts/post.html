@@ -30,12 +30,12 @@ layout: default
 <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
     var gitment = new Gitment({
-        id: '<%= page.date %>',
-        owner: '{{site.github_username}}',
-        repo: '{{site.comment_gitment_repo}}',
+        // id: '<%= page.date %>',
+        owner: '{{site.gitment.github_user}}',
+        repo: '{{site.gitment.github_repo}}',
         oauth: {
-            client_id: '{{site.comment_gitment_clientId}}',
-            client_secret: '{{site.comment_gitment_clientSecret}}',
+            client_id: '{{site.gitment.client_id}}',
+            client_secret: '{{site.gitment.client_secret}}',
         },
     });
     gitment.render('gitmentContainer')
